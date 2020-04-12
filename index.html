@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Versión 2 de la lista de la compra OOP. Esta versión permite manejar dos listas, 
+    una lista con los elementos que se desea comprar y otra lista con los elementos
+    que se han comprado. Se permite pasar elementos de una lista a otra.
+-->
+
+<head>
+    <meta charset="utf8">
+    <title>Lista de la compra</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/MyList.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 ">
+                <h1 class="text-center titulo">Lista de la compra</h1>
+            </div>
+
+
+            
+            
+            <div class="card centrado">
+                <div class="card-header ">
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="itemToAdd" placeholder="Nuevo elemento">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <button id="addBtn" class="btn btn-success">Añadir</button>
+                      </div>
+                  </form>
+                </div>
+                
+
+
+                <!--<div class="card-header ">
+                    Nuevo elemento: <input id="itemToAdd"  type="text"  />
+                    <button id="addBtn" class="btn btn-danger">Añadir</button>
+                </div>-->
+
+
+                <div class="card-body">
+                    <h4 class="titulo-sub">Necesito</h4>
+                    <ul id="shoppingList" class="list-group list-group-flush">
+                        <!--Items will be added here -->
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <h4 class="titulo-sub">Comprados</h4>
+                    <ul id="removedList" class="list-group list-group-flush">
+                        <!--Removed items will be added here -->
+                    </ul>
+                    </div>
+
+</body>
+
+</html>

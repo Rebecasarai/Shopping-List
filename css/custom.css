@@ -1,0 +1,14 @@
+.centrado {
+    margin: 0 auto !important; /* Added */
+    float: none !important; /* Added */
+    margin-bottom: 10px !important; /* Added */
+}
+
+.titulo{
+    margin: 10% 0 5% 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.titulo-sub{
+    font-family: 'Courgette', cursive;
+}
